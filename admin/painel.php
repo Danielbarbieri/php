@@ -1,4 +1,13 @@
 
+<?php
+    session_start();
+
+    if(!isset($_SESSION) || !isset ($_SESSION['autenticado']) || !$_SESSION['autenticado']) {
+        header('Location: /');
+    }
+
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -57,6 +66,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-primary">
                 <div class="container-fluid">
                     <a class="navbar-brand text-light" href="#">Minha carteira</a>
+                    <a href="/admin/logout.php" class="btn text-light">Sair</a>
                 </div>
             </nav>
         </div>
