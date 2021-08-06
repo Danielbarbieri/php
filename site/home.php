@@ -47,7 +47,7 @@
                             <h5 class="card-title">Login</h5>
                             <form action="/admin/login" method="POST">
                                 <div class="mb-3">
-                                    <label for="admin">Admin</label>
+                                    <label for="admin" class="form-label">Admin</label>
                                     <input type="text" class="form-control" id="admin" aria-describedby="adminHelp" name="admin" placeholder="">
                                     
                                 </div>
